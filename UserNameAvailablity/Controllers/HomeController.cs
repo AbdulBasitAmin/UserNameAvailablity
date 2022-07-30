@@ -18,7 +18,7 @@ namespace UserNameAvailablity.Controllers
 
         public JsonResult CheckUsernameAvailablity(string userdata)
         {
-            System.Threading.Thread.Sleep(200);
+            System.Threading.Thread.Sleep(5500000);
             var SearchData = db.tbl_student.Where(x => x.StudName == userdata).SingleOrDefault();
 
             if (SearchData != null)
